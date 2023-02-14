@@ -11,7 +11,7 @@ import TodoList from './TodoList';
 const TodoWrap=styled.div`
   width: 100%; padding: var(--gap-large) 0;
 `;
-const TodoTop=styled.div`
+const TodoTop=styled.div` 
   display: flex; justify-content: space-between; align-items: center;
   > h2 {font-size: var(--fz-big); font-weight: bold; color: var(--main);}
 `;
