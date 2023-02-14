@@ -1,0 +1,87 @@
+@import './fonts.css';
+:root {
+  --gap-large: 30px;
+  --gap-big: 20px;
+  --gap-base: 15px;
+  --gap-sm: 10px;
+
+  --font-e: 'Raleway', sans-serif;
+  --font-k: 'Pretendard-Regular';
+
+  --main: #2581D6;
+  --red: #FF5858;
+  --yellow: #FFD056;
+  --green: #C8EB65;
+  --blue: #6AD5F6;
+  --purple: #E682FF;
+  --gray: #dddddd;
+  --carbon: #7d7d7d;
+  --black: #333333;
+
+  --rgb-red: 255,88,88;
+  --rgb-yellow: 255,208,86;
+  --rgb-green: 200,235,101;
+  --rgb-blue: 106,213,246;
+  --rgb-purple: 230,130,255;
+  --rgb-black: 34,34,34;
+
+  --fz-large: 30px;
+  --fz-big: 20px;
+  --fz-base: 16px;
+  --fz-sm: 14px;
+  --fz-tiny: 12px;
+}
+
+.intro-cont {
+	position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%,-50%); z-index: 100;
+}
+
+.intro-cont h2 {
+	color: #fff;
+	font-size: 5em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.intro-cont h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px var(--gray);
+}
+
+.intro-cont h2:nth-child(2) {
+	color: #fff;
+	animation: animate 3s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
