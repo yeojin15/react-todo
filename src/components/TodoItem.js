@@ -67,7 +67,6 @@ const TodoItem = ( { id, done, text } ) => {
   const [ delOverlay, setDelOverlay ] = useState(false);
   const [ isEdit, setIsEdit ] = useState(false)
   const [ todoTxt, setTodoTxt ] = useState(text)
-  const [ inputVal, setInputVal ] = useState("")
 
   const deleteConfirm = (e) => {
     e.stopPropagation()
@@ -76,9 +75,6 @@ const TodoItem = ( { id, done, text } ) => {
   const deleteCancel = (e) => {
     e.stopPropagation()
     setDelOverlay(false)
-  }
-  const todoEdit=()=>{
-    setIsEdit(true)
   }
   const onKeyEnter=(e)=>{
     if(e.key==='Enter'){
